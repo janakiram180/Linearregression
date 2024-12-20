@@ -1,0 +1,101 @@
+/* Reset margin and height for html and body */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Center the form container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #eef2f3;
+    overflow: hidden; /* Prevent body scrolling */
+}
+
+/* Form container with scrollable content */
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    max-height: 80vh; /* Limit the height of the form */
+    overflow-y: auto; /* Add vertical scrolling if content exceeds max-height */
+}
+
+/* Label and input container */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+/* Label styling */
+label {
+    flex: 1; /* Take up available space */
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+    margin-right: 12px; /* Spacing between label and input */
+}
+
+/* Input styling */
+input {
+    flex: 2; /* Adjust input box width */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+/* Button styling */
+button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the prediction section */
+.prediction {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    text-align: center;
+}
+
+.prediction h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.prediction p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #555;
+}
